@@ -1,5 +1,5 @@
 // @flow
 
-// import fn from '.';
+// import fn from './segments';
 
 // export default fn;
