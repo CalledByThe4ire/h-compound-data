@@ -1,21 +1,23 @@
-import { car, cdr, isPair, toString } from 'hexlet-pairs'; // eslint-disable-line
+import { car, cdr, isPair, toString } from "hexlet-pairs"; // eslint-disable-line
 
 // BEGIN (write your solution here)
 // @flow
 
 type Pair = {
   a: mixed,
-  b: mixed,
+  b: mixed
 };
 
 const findPrimitiveBox = (pair: Pair): Pair => {
-  if (!isPair(car(pair)) && !isPair(cdr(pair))) {
+  const first: Pair | null = car(pair);
+  const last: Pair | null = cdr(pair);
+
+  if (!isPair(first) && !isPair(last)) {
     return pair;
   }
-  if (isPair(car(pair))) {
-    return findPrimitiveBox(car(pair));
-  }
-  return findPrimitiveBox(cdr(pair));
+
+  const next: Pair = isPair(first) ? first : last;
+  return findPrimitiveBox(next);
 };
 
 // END
