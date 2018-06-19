@@ -1,5 +1,5 @@
 // @flow
 
-import points from './points';
+// import fn from '.';
 
-export default points;
+// export default fn;

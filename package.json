@@ -55,7 +55,7 @@
     "eslint-plugin-jest": "^21.15.0",
     "flow-bin": "^0.57",
     "flow-typed": "^2.4.0",
-    "hexlet-points": "^1.0.7",
+    "hexlet-pairs": "^1.0.8",
     "jest": "^22",
     "jest-cli": "^22.4.3"
   }
