@@ -1,5 +1,5 @@
 // @flow
 
-// import fn from './segments';
+// import fn from './rectangles';
 
 // export default fn;

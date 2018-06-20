@@ -5,8 +5,8 @@ Make a point
 
 Parameters
 
--   `x` [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)
--   `y` [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)
+-   `x` any
+-   `y` any
 
 Examples
 
@@ -14,8 +14,6 @@ Examples
 const point = makePoint(4, 5);
 
 ```
-
-Returns Point
 
 getX
 ----
@@ -34,8 +32,6 @@ getX(point); // 4
 
 ```
 
-Returns [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)
-
 getY
 ----
 
@@ -53,7 +49,23 @@ getY(point); // -2
 
 ```
 
-Returns [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)
+quadrant
+--------
+
+Determine quadrant for given point
+
+Parameters
+
+-   `point` Point
+
+Examples
+
+```
+quadrant(makePoint(5, 0)); // undefined
+quadrant(makePoint(1, 5)); // 1
+quadrant(makePoint(-3, 10)); // 2
+
+```
 
 toString
 --------
@@ -69,7 +81,4 @@ Examples
 ```
 const point = makePoint(0, 10);
 toString(point); // (0, 10)
-
 ```
-
-Returns [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
