@@ -1,5 +1,5 @@
 // @flow
 
-import pairs from './pairs';
+import rational from './rational';
 
-export default pairs;
+export default rational;
