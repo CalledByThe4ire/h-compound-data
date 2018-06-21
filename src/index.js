@@ -1,5 +1,5 @@
 // @flow
 
-// import fn from './rectangles';
+import pairs from './pairs';
 
-// export default fn;
+export default pairs;
