@@ -1,21 +1,41 @@
 import { cons, car, cdr } from '../pairs';
 
-describe('Pairs on strings', () => {
+describe('Pairs', () => {
   it('1 set', () => {
-    const pair = cons('hi', 'hexlet');
-    expect(car(pair)).toBe('hi');
-    expect(cdr(pair)).toBe('hexlet');
+    const pair = cons(0, 0);
+    expect(pair).toBe(1);
+    expect(car(pair)).toBe(0);
+    expect(cdr(pair)).toBe(0);
   });
 
   it('2 set', () => {
-    const pair = cons('Hello!', '');
-    expect(car(pair)).toBe('Hello!');
-    expect(cdr(pair)).toBe('');
+    const pair = cons(1, 2);
+    expect(pair).toBe(18);
+    expect(car(pair)).toBe(1);
+    expect(cdr(pair)).toBe(2);
   });
 
   it('3 set', () => {
-    const pair = cons('', 'XXI');
-    expect(car(pair)).toBe('');
-    expect(cdr(pair)).toBe('XXI');
+    const pair = cons(2, 1);
+    expect(pair).toBe(12);
+    expect(car(pair)).toBe(2);
+    expect(cdr(pair)).toBe(1);
+  });
+
+  it('4 set', () => {
+    const pair = cons(5, 8);
+    expect(pair).toBe(209952);
+    expect(car(pair)).toBe(5);
+    expect(cdr(pair)).toBe(8);
+  });
+
+  it('5 set', () => {
+    const pair = cons(0, 0);
+    const transit = cons(1, 1);
+    expect(pair).toBe(1);
+    expect(car(pair)).toBe(0);
+    expect(cdr(pair)).toBe(0);
+    expect(car(transit)).toBe(1);
+    expect(cdr(transit)).toBe(1);
   });
 });
